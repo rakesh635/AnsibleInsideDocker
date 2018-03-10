@@ -1,0 +1,11 @@
+version: '2'
+services:
+  apache-php:
+    build: ./apache
+    ports:
+      - "80:80"
+  nginx:
+    build: ./nginx
+    ports:
+      - "8080:80"
+
